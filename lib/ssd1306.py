@@ -112,6 +112,9 @@ class SSD1306:
     def scroll(self, dx, dy):
         self.framebuf.scroll(dx, dy)
 
+    def blit(self, fbuf, x, y):
+        self.framebuf.blit(fbuf, x, y)
+
     def text(self, string, x, y, col=1):
         self.framebuf.text(string, x, y, col)
         
